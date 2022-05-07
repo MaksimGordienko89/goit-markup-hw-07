@@ -75,7 +75,7 @@ img {
 .icon-cosmonavt::before {
   background-image: url(../images/icons/astronaut.png);
 }
-.nav {
+.navigation-menu {
   display: flex;
   list-style: none;
   align-items: center;
@@ -89,7 +89,7 @@ img {
 .list-nav:not(:last-child) {
   margin-right: 50px;
 }
-.naiv-nav {
+.navigation {
   display: flex;
 }
 
@@ -111,26 +111,18 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.web-color {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.list-item {
+.navigation-menu-list {
   display: flex;
   margin-left: 93px;
 }
-.list-pages {
+.navigation-menu-list__item {
   list-style: none;
   position: relative;
 }
-.list-pages:not(:last-child) {
+.navigation-menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
-.logo {
+.navigation-menu__logo {
   list-style: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -140,21 +132,29 @@ img {
   letter-spacing: 0.03em;
   color: var(--logo-color);
 }
-.link:hover,
+.navigation-menu__logo-color {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.navigation-menu-list__link:hover,
 .mail:hover,
 .tel:hover,
 .footer-mail:hover,
 .footer-tel:hover {
   color: var(--accent-color);
 }
-.link:focus,
+.navigation-menu-list__link:focus,
 .mail:focus,
 .tel:focus,
 .footer-mail:focus,
 .footer-tel:focus {
   color: var(--accent-color);
 }
-.link {
+.navigation-menu-list__link {
   display: block;
   list-style: none;
   text-decoration: none;
