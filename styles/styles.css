@@ -439,7 +439,7 @@ img {
 .follow {
   margin-left: 70px;
 }
-.follow-title {
+.follow__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -450,7 +450,7 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
 }
-.follow-soc-link {
+.follow__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -461,18 +461,18 @@ img {
   fill: var(--main-lite-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.follow-soc-list {
+.follow__soc-list {
   list-style: none;
   display: flex;
 }
-.follow-soc-item + .follow-soc-item {
+.follow__soc-item + .follow__soc-item {
   margin-left: 10px;
 }
-.follow-soc-link:hover {
+.follow__soc-link:hover {
   background-color: var(--accent-color);
   fill: var(--main-lite-color);
 }
-.follow-soc-link:focus {
+.follow__soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--main-lite-color);
 }
@@ -511,11 +511,10 @@ footer {
   list-style: none;
   max-width: 231px;
   margin-right: 0;
+}
+.adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
-/* .footer-adress {
-  margin-top: 0;
-} */
 .adress__mail,
 .adress__tel {
   list-style: none;
