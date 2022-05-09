@@ -33,9 +33,9 @@ footer {
   list-style: none;
   max-width: 231px;
   margin-right: 0;
-}
-.adress__item:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .adress__mail,
 .adress__tel {

@@ -16,15 +16,15 @@
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__item:hover & {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  .clients__item:focus & {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }
 .clients__item + .clients__item {
   margin-left: 30px;
-}
-.clients__item:hover .clients__link {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-.clients__item:focus .clients__link {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }

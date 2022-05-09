@@ -1,20 +1,21 @@
 .features__item {
   list-style: none;
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--btn-filter-background-color);
+    margin-bottom: 30px;
+  }
 }
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
-.features__item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--btn-filter-background-color);
-  margin-bottom: 30px;
-}
+
 .icon-antenne::before {
   background-image: url(../images/icons/antenna.png);
 }
